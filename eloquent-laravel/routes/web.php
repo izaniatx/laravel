@@ -11,5 +11,5 @@ Route::get('/', function () {
 //Route::get('montanyas', MontanyasController::class);
 
 Route::get('montanyas', [MontanyaController2::class, 'index2']);
+Route::get('montanyas/alta', [MontanyaController2::class, 'alta']);
 Route::get('montanyas/{id}', [MontanyaController2::class, 'show']);
-Route::get('montanyas/alta', [MontanyaController2::class, 'alta']);   
